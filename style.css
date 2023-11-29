@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    background: rgb(28,75,107);
+    background: linear-gradient(90deg, rgba(28,75,107,1) 21%, rgba(31,82,116,1) 40%, rgba(44,108,151,1) 62%, rgba(44,108,151,1) 74%);
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1.5rem;
+    font-weight: 600;
+}
+.switch{
+    display: flex;
+    gap: 20rem;
+    justify-content: center;
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 2rem;    
+}
+.switch div{
+    cursor: pointer;
+}
+.grant-access{
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    left: 475px;
+}
+
+.your-weather{
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    left: 340px;
+    top: 35%;
+}
+
+.search-weather{
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    left: 410px;
+}
+
+.load{
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    left: 550px;
+}
+.active{
+    opacity: 1;
+}
+
+.currTab{
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 6px;
+    border-radius: 5px;
+    scale: 1;
+}
+.icon i{
+    font-size: 5rem;
+    padding: 1.5rem;
+}
+.head-1{
+    font-size: 1.7rem;
+    pad: 1rem;
+}
+.desc-1{
+    margin: 1rem;
+}
+.btn-1 button{    
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #10364f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.city-name{
+    font-size: 2rem;
+}
+.weather-status{
+    font-size: 1.7rem;
+}
+.weather-temp{
+    font-size: 3rem;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1rem;
+}
+.cards div{
+    padding: 0.5rem;
+    height: 130px;
+    width: 150px;
+    border: 1px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+}
+.cards div img{
+    height: 70px;
+    width: 80px;
+}
+.cards div p{
+    opacity: 100%;
+    color: white;
+    font-weight: bold;
+    filter: opacity(100%);
+}
+
+.input{
+    /* z-index: 10; */
+    margin: 2rem;
+    padding-top: -10px;
+}
+.input input{
+    all: unset;
+    background-color: rgba(219, 226, 239, 0.5);
+    width: 22rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: none;
+    margin-right: 1rem;
+    padding: auto 2rem;
+}
+.input input:focus{
+    border: 3px solid rgba(255,255,255,0.7);
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+.input input::placeholder{
+    color: white;
+    font-size: large;
+    padding: auto;
+    font-weight: 600;
+}
+.input input:focus::placeholder{
+    /* border: 3px solid rgba(255,255,255,0.7); */
+    color: white;
+    font-size: large;
+}
+.search-btn{
+    height: 40px;
+    width: 40px;
+    background-color: #10364f;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.fa-solid{
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+}
+.undef img{
+    height: 300px;
+    width: 400px; 
+    left: 50%;
+    position: absolute; 
+    transform: translateX(-50%);
+    background-color: red;
+}
+.undef{
+    background-color: azure;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    z-index: 3;
+}

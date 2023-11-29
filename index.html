@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            WEATHER APP
+        </div>
+        <div class="switch">
+            <div class="user-conatiner">
+                Your Weather
+            </div>
+            <div class="search-container active">
+                Search Weather
+            </div>
+        </div>
+
+        <div class="mains">
+            <!-- grant access -->
+            <div class="grant-access">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="head-1">
+                    Grant Location Access
+                </div>
+                <div class="desc-1">
+                    Allow Access To Get Weather Information
+                </div>
+                <div class="btn-1">
+                    <button data-access-btn>
+                        GRANT ACCESS
+                    </button>
+                </div>
+            </div>
+            <!-- user weather -->
+            <div class="your-weather">
+                <div class="city-name" data-city><img src="" alt="" data-city-icon></div>
+                <div class="weather-status" data-weather-status></div>
+                <div class="status-image" data-status-image><img src="" alt="" data-weather-icon></div>
+                <div class="weather-temp" data-weather-temp></div>
+                <div class="cards">
+                    <div class="card-1"><img src="assets/wind.png" alt=""><p>Windspeed</p><p data-c1></p></div>
+                    <div class="card-2"><img src="assets/humidity.png" alt=""><p>Humidity</p><p data-c2></p></div>
+                    <div class="card-3"><img src="assets/cloud.png" alt=""><p>Clouds</p><p data-c3></p></div>
+                </div>
+            </div>
+            <!-- search weather -->
+            <div class="search-weather">
+                <form class="input">
+                    <input type="input" placeholder="Search for city..."  data-searchField id="haha">
+                    <!-- <button type="submit" class="search-btn"><i class="fa-magnifying-glass" ></i></button> -->
+                    <button type="submit" class="search-btn" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <!-- load icon  -->
+            <div class="load">
+             <img src="assets/loading-2.gif" height="150" width="150" alt="" data-loading>
+            </div>
+            <!-- page no found img   -->
+            <div class="undef">
+                <img src="assets/not-found.png" alt="abc" class="abc">
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/869ac6c5e5.js" crossorigin="anonymous"></script>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
